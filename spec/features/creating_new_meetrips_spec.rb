@@ -6,8 +6,8 @@ feature 'Meetrips' do
     expect(meetrip.status).to eq(200)
     expect(JSON.parse(meetrip.body)).to eq({"id"=>1,
                                             "from_location"=>"London",
-                                            "to_location"=>"Manchester",
-                                            "contact_info"=>"555 0123"})
+                                            "to_location"  =>"Manchester",
+                                            "contact_info" =>"555 0123"})
 
   end
 end
