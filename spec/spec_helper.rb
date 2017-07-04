@@ -6,6 +6,7 @@ require 'capybara/rspec'
 require 'database_cleaner'
 require 'rack/test'
 require 'rspec'
+require 'features/web_helpers'
 
 Capybara.app = Meeto
 
@@ -25,10 +26,10 @@ Capybara.app = Meeto
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  
+
   # rack / test configuration
   config.include Rack::Test::Methods
-  
+
   def app
     Rack::Builder.parse_file("config.ru").first
   end
