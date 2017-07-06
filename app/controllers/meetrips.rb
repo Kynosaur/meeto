@@ -1,5 +1,9 @@
 class Meeto < Sinatra::Base
 
+  before do
+    headers 'Access-control-allow-origin' => '*'
+  end
+
   get '/meetrips' do
     meetrips = Meetrip.all
     if meetrips.any?
