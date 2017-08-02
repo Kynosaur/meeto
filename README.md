@@ -1,8 +1,8 @@
 # Meeto API
 
-An API built with Sinatra to show and create 'Meetrips'.  Responds to the [Meeto Client](https://github.com/Kynosaur/meeto-client).
+An API built with Sinatra to show and create 'Meetrips'.  Responds to the [Meeto Client](https://github.com/Kynosaur/meeto-client) - please see the README there for full details.
 
-## instructions
+## Instructions
 
 - Clone this repo to your local machine
 - Install required gems: `$ bundle install`
